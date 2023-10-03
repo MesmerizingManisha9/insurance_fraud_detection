@@ -7,7 +7,7 @@ import dill
 import pickle
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV 
-from src import logger
+
 
 from src.exception import CustomException
 
@@ -62,6 +62,6 @@ def load_object(file_path):
             return pickle.load(file_obj)
 
     except Exception as e:
-        logger.logging.info(e) # it will print exception
+        
         raise CustomException(e, sys)
     

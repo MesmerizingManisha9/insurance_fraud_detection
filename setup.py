@@ -1,5 +1,5 @@
 # This file we require to convert your code in the libraray format 
-# install yopur source code in lib format
+# install your source code in lib format
 # To create lib
 
 from setuptools import find_packages,setup
